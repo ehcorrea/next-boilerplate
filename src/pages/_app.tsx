@@ -9,6 +9,8 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Next - Boilerplate</title>
         <meta name="description" content="A Boilerplate created with Next" />
+        <meta name="#000000" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
