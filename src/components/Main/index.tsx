@@ -1,6 +1,16 @@
+import { MainProps } from './interfaces';
 import * as S from './styles';
 
-const Main = () => (
+const defaultTexts = {
+  title: 'Hi, I am Emilio. A Web Developer and this is my Boilerplate',
+  description:
+    'This Boilerplate was created with Next.JS, TypeScript, Jest, Testing Library and Styled Components',
+};
+
+const Main = ({
+  title = defaultTexts.title,
+  description = defaultTexts.description,
+}: MainProps) => (
   <S.Wrapper>
     <S.Header>
       <S.Logo src="vercel.svg" alt="Logo written vessel" />
@@ -12,13 +22,8 @@ const Main = () => (
         alt="Emilio Henrique Corrêa profile photo"
       />
       <S.InfosContainer>
-        <S.Title>
-          Hi, I am Emilio. A Web Developer and this is my Boilerplate
-        </S.Title>
-        <S.Description>
-          This Boilerplate was created with Next.JS, TypeScript, Jest, Testing
-          Library and Styled Components
-        </S.Description>
+        <S.Title>{title}</S.Title>
+        <S.Description>{description}</S.Description>
         <S.LinkButton href="https://linktr.ee/ehcorrea" target="_blank">
           links
         </S.LinkButton>
