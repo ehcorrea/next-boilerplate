@@ -63,7 +63,6 @@ export const InfosContainer = styled.div`
 
 export const Title = styled.h1`
   color: #dedede;
-  font-family: Manrope;
   font-size: 30px;
   font-style: normal;
   font-weight: bold;
@@ -78,7 +77,6 @@ export const Title = styled.h1`
 
 export const Description = styled.h2`
   color: #959595;
-  font-family: Manrope;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -98,7 +96,6 @@ export const LinkButton = styled.a`
   border-radius: 4px;
   color: #ffffff;
   display: flex;
-  font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   height: 57px;
