@@ -1,4 +1,4 @@
-import { MainProps } from './interfaces';
+import { MainProps } from './types';
 import * as S from './styles';
 
 const defaultTexts = {
